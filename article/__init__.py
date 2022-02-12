@@ -17,11 +17,11 @@ def data():
     for j in date:
         datt.append(j.text)
 
-    print('berikut artikel terakhir pada web BMKG:')
-    print(f"{dat[0]}, terbit pada tanggal {datt[0]}")
-    print(f"{dat[1]}, terbit pada tanggal {datt[1]}")
-    print(f"{dat[2]}, terbit pada tanggal {datt[2]}")
-    print(f"{dat[3]}, terbit pada tanggal {datt[3]}")
+    print('This is the last article on BMKG:')
+    print(f"{dat[0]}, published on {datt[0]}")
+    print(f"{dat[1]}, published on {datt[1]}")
+    print(f"{dat[2]}, published on {datt[2]}")
+    print(f"{dat[3]}, published on {datt[3]}")
 
 
 if __name__ == '__main__':

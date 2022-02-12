@@ -5,10 +5,10 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="bmkgdashboard",
-    version="0.1.5",
+    version="0.7",
     author="Sencho Parameswara",
     author_email="senchoparameswara@gmail.com",
-    description="this package is dashboard for BMKG indonesian earthquake live and last articlee",
+    description="this package is src for BMKG indonesian earthquake live and last articlee",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/sencho-masteringpy/bmkg-dashboard",
@@ -21,7 +21,6 @@ setuptools.setup(
         "Operating System :: OS Independent",
         "Development Status :: 4 - Beta"
     ],
-    package_dir={"earthquake": "earthquake", "article": "article"},
-    packages=setuptools.find_packages(),
-    python_requires=">=3.6",
+    packages=["bmkgdashboard"],
+    python_requires=">=3.6"
 )

@@ -2,8 +2,17 @@ from bs4 import BeautifulSoup
 import requests
 
 content = 'https://www.bmkg.go.id/'
-test = requests.get(content)
-soup = BeautifulSoup(test.text, 'html.parser')
+req = requests.get(content)
+soup = BeautifulSoup(req.text, 'html.parser')
+
+
+def test():
+    try:
+        if req.status_code == 200:
+            print('web accessable')
+            print(soup.find('title').string)
+    except Exception:
+        print('server down')
 
 
 def earthquake():

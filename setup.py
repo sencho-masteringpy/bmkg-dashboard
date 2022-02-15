@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="bmkgdashboard",
-    version="0.7",
+    version="0.8",
     author="Sencho Parameswara",
     author_email="senchoparameswara@gmail.com",
     description="this package is src for BMKG indonesian earthquake live and last articlee",
